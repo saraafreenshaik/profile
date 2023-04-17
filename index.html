@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>website</title>
+    <link rel="stylesheet" href="./index.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.5.0/font/bootstrap-icons.css">
+
+</head>
+<body>
+    <nav id="navBar" class="navBar">
+        <div onclick="openMenu()" class="menuIcon">
+            <i class="bi-list"></i>
+
+        </div>
+        <div class="navList">
+            <a href="#aboutMe">About Me</a>
+            <a href="#education">Education</a>
+            <a href="#skills">Skills</a>
+            <a href="#projects">Projects</a>
+            <a href="#contactMe">Contact Me</a>
+        </div>
+        <img  class="navProfile" src="./butterfly.jpg" alt="image">
+        
+    </nav>
+   <main>
+    <div class="profileBody">
+        <div class="prfileInfo">
+            <p class="text1">Hello,It`s me sara</p>
+            <p class="text2">SHAIK SARA AFREEN</p>
+            <p class="text3">full stack developer</p>
+            <div class="skillsList">
+                <p>HTML</p>
+                <p>CSS</p>
+            </div>
+        </div>
+        <div>
+            <img  class="ProfileImage" src="./butterfly.jpg" alt="image">
+        </div>
+
+    </div>
+    <div class="aboutmeBody" id="aboutMe">
+        <p class="title">About Me</p>
+        <div class="aboutmeInfo">
+            <p> my name is sara afreen shaik</p>
+            <ul>
+                <li>sara</li>
+                <li>afreen</li>
+                <li>shaik</li>
+                <li>alina</li>
+                <li>gundi</li>
+            </ul>
+        </div>
+    </div>
+   </main>
+</body>
+<script>
+    function openMenu(){
+        document.getElementById('navBar')?.classList.toggle('active')
+    }
+</script>
+</html>
